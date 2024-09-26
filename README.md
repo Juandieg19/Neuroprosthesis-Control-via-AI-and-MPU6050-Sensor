@@ -1,4 +1,4 @@
-**Using ESP32 Arduino and Python Scripts Together**
+# Using ESP32 Arduino and Python Scripts Together
 
 Overview:
 This repository includes an Arduino script for ESP32 interfacing with an MPU6050 sensor to collect acceleration data. Additionally, a Python script receives this data via serial communication, processes it, and visualizes the results using bar charts.
