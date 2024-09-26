@@ -1,22 +1,22 @@
-Neuroprosthesis Control with MPU6050 and Neural Network
+# Neuroprosthesis Control with MPU6050 and Neural Network
 
 This project uses the MPU6050 accelerometer and gyroscope sensor and a neural network to control pulse sequences for neuroprosthesis activation. The system reads motion data from the MPU6050 sensor, extracts relevant features, and processes them through a trained neural network model. Depending on the predicted class from the neural network, it triggers different pulse sequences to control an external device (e.g., a neuroprosthesis) through digital pins.
 
-Hardware Requirements
+## Hardware Requirements
 
 - ESP32 microcontroller
 - MPU6050 sensor (connected via I2C)
 - External device or neuroprosthesis connected to digital pins (Pin 16, Pin 4, Pin 5, and Pin 17)
 - LED (optional for visual feedback, connected to Pin 2)
 
-Features
+## Features
 
 - Motion sensing: The MPU6050 reads accelerometer data to detect motion.
 - Feature extraction: Mean absolute value (MAV), root mean square (RMS), and wavelength are calculated from the motion data.
 - Neural network inference: A simple neural network processes the features and classifies the motion into one of three classes.
 - Pulse sequences: Based on the classification, different pulse sequences are activated to control a connected neuroprosthesis.
 
-Setup Instructions
+## Setup Instructions
 
 1. Connect the MPU6050 Sensor to the ESP32
 
